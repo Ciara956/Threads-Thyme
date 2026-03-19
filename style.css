@@ -1,0 +1,26 @@
+ .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .mobile-menu {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: block;
+            }
+            .desktop-nav {
+                display: none;
+            }
+        }
+        .hidden-section {
+            display: none;
+        }
+        .active-section {
+            display: block;
+        }
+        /* Fix for star ratings */
+        .star-rating i {
+            display: inline-block;
+        }
